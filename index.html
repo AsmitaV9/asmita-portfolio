@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asmita | Web Developer</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
+    body { background: #f8fafc; color: #0f172a; line-height: 1.6; }
+    header { padding: 60px 20px; text-align: center; animation: fadeIn 1.2s ease; background: #e0f2fe; }
+    header h1 {
+      font-size: 2.5rem;
+      color: #0284c7;
+      animation: textPop 1.4s ease;
+    }
+
+    @keyframes textPop {
+      0% { transform: scale(0.9); opacity: 0; }
+      60% { transform: scale(1.05); opacity: 1; }
+      100% { transform: scale(1); }
+    }
+    header p { font-size: 1.1rem; margin-top: 10px; }
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #0284c7;
+      color: #ffffff;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 15px rgba(2,132,199,0.4);
+    }
+    section { max-width: 900px; margin: auto; padding: 40px 20px; animation: fadeUp 1s ease; }
+    h2 { color: #0284c7; margin-bottom: 15px; }
+    .skills span { display: inline-block; background: #e2e8f0; padding: 8px 12px; margin: 6px; border-radius: 6px; transition: transform 0.3s; }
+    .skills span:hover {
+      transform: scale(1.15) rotate(-2deg);
+      background:#bae6fd;
+    }
+    .project {
+      background: #ffffff;
+      padding: 15px;
+      margin: 15px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .project::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(120deg, transparent, rgba(56,189,248,0.2), transparent);
+      transition: left 0.6s ease;
+    }
+    .project:hover::before {
+      left: 100%;
+    }
+    .project:hover {
+      transform: translateY(-8px) scale(1.01);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+    }
+    .project:hover { transform: translateY(-5px); }
+    footer { text-align: center; padding: 20px; background: #e2e8f0; margin-top: 40px; }
+    a { color: #0284c7; text-decoration: none; }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+    /* Smooth scroll animation */
+    html { scroll-behavior: smooth; }
+
+    /* Reveal animation */
+    .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease; }
+    .reveal.active { opacity: 1; transform: translateY(0); } to { opacity: 1; transform: translateY(0); } }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Hi, I'm Asmita 👋</h1>
+  <p>Web Developer Intern | Frontend Developer</p>
+  <p style="margin-top:10px; color:#94a3b8;">I build responsive, user-friendly web applications using modern web technologies and I am also an aspiring Data Science enthusiast.</p>
+  <a class="btn" href="Asmita_Resume.pdf" target="_blank">Download Resume</a>
+</header>
+
+<section class="reveal">
+  <h2>About Me</h2>
+  <p>
+    I am a motivated Web Developer Intern and aspiring Data Science enthusiast with hands-on experience in building responsive and interactive web applications.
+    I enjoy working with HTML, CSS, and JavaScript, and I am continuously learning modern frameworks like React.
+    I am eager to contribute to real-world projects and grow as a developer.
+  </p>
+</section>
+
+<section class="reveal">
+  <h2>Skills</h2>
+  <div class="skills">
+    <span>HTML5</span>
+    <span>CSS3</span>
+    <span>JavaScript (ES6)</span>
+    <span>Python</span>
+    <span>Django (Basics)</span>
+    <span>React (Basics)</span>
+    <span>Git & GitHub</span>
+    <span>Responsive Design</span>
+    <span>Pandas</span>
+    <span>Matplotlib</span>
+  </div>
+</section>
+
+<section class="reveal">
+  <h2>Projects</h2>
+
+    <div class="project">
+    <h3>🛒 E-commerce Website</h3>
+    <p>
+      Built a complete E-commerce web application with product catalog, search, user authentication,
+      cart, wishlist, and checkout functionality.
+      Designed a clean and responsive frontend and implemented a secure Django backend with database models
+      for products, users, orders, and inventory management.
+    </p>
+  </div>
+
+  <div class="project">
+    <h3>📝 To-Do List Application</h3>
+    <p>
+      Developed a responsive To-Do List web application using HTML, CSS, and JavaScript.
+      Features include adding, deleting, marking tasks as completed, and persistent storage.
+    </p>
+  </div>
+
+    <div class="project">
+    <h3>🎮 Connect Four Game</h3>
+    <p>
+      Implemented the classic Connect Four game using JavaScript logic and DOM manipulation.
+      Focused on turn-based gameplay, win-condition detection, and interactive UI design.
+    </p>
+    <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+  </div>
+
+  <div class="project">
+    <h3>🎵 Music Playlist Analyzer</h3>
+    <p>
+      Analyzed personal music playlist data using Python as part of a data science assignment.
+      Performed data analysis to find average duration, most common genres, and listening patterns.
+      Created meaningful visualizations using Pandas and Matplotlib, including insights on songs by Shreya Ghoshal.
+    </p>
+    <p><strong>Tech Stack:</strong> Python, Pandas, Matplotlib</p>
+  </div>
+
+</section>
+
+<section class="reveal">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:paygudeasmita@gmail.com">paygudeasmita@gmail.com</a></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/asmita-paygude-988603308" target="_blank">www.linkedin.com/in/asmita-paygude-988603308</a></p>
+  <p>GitHub: <a href="https://github.com/AsmitaV9" target="_blank">https://github.com/AsmitaV9</a></p>
+</section>
+
+<footer>
+  <p>© 2025 Asmita | Interview‑Ready Portfolio</p>
+</footer>
+
+<script>
+  const reveals = document.querySelectorAll('.reveal');
+  window.addEventListener('scroll', () => {
+    reveals.forEach(section => {
+      const windowHeight = window.innerHeight;
+      const elementTop = section.getBoundingClientRect().top;
+      const revealPoint = 100;
+      if (elementTop < windowHeight - revealPoint) {
+        section.classList.add('active');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
